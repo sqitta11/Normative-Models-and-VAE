@@ -1,5 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import torch 
+
+y = torch.randn(4)
+print(y)
 
 x = np.sum([1,2,3])
 print(x)
