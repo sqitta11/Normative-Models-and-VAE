@@ -1,0 +1,127 @@
+{
+    "name": null,
+    "save_dir": "/home/preclineu/quirom/Desktop/internship/Normative-Models-and-VAE/logs/BLR/",
+    "savemodel": true,
+    "saveresults": true,
+    "saveplots": true,
+    "evaluate_model": true,
+    "template_regression_model": {
+        "name": "FirstModel",
+        "type": "BLR",
+        "is_fitted": false,
+        "is_from_dict": false,
+        "transfered": false,
+        "ptk_version": "1.1.2",
+        "_name": "FirstModel",
+        "n_iter": 100,
+        "tol": 0.001,
+        "ard": false,
+        "optimizer": "l-bfgs-b",
+        "l_bfgs_b_l": 0.1,
+        "l_bfgs_b_epsilon": 0.1,
+        "l_bfgs_b_norm": "l2",
+        "fixed_effect": true,
+        "fixed_effect_slope": false,
+        "fixed_effect_slope_indices": null,
+        "heteroskedastic": true,
+        "fixed_effect_var": false,
+        "fixed_effect_var_slope": false,
+        "fixed_effect_var_slope_indices": null,
+        "warp_name": "warpsinharcsinh",
+        "warp_params": 2,
+        "n_gamma": 2,
+        "warp_reparam": false,
+        "gamma": null,
+        "basis_function_mean": {
+            "is_fitted": false,
+            "basis_name": "bspline",
+            "min": {},
+            "max": {},
+            "compute_min": true,
+            "compute_max": true,
+            "basis_column": [
+                -1
+            ],
+            "degree": 3,
+            "nknots": 5,
+            "left_expand": 0.05,
+            "right_expand": 0.05,
+            "knot_method": "uniform",
+            "knots": {},
+            "basis_function": "BsplineBasisFunction"
+        },
+        "basis_function_var": {
+            "is_fitted": false,
+            "basis_name": "linear",
+            "min": {},
+            "max": {},
+            "compute_min": true,
+            "compute_max": true,
+            "basis_column": [
+                -1
+            ],
+            "basis_function": "LinearBasisFunction"
+        },
+        "models_variance": true,
+        "hyp0": null,
+        "hyp": null
+    },
+    "inscalers": {
+        "Age": {
+            "scaler_type": "standardize",
+            "adjust_outliers": false,
+            "m": 55.27782124361983,
+            "s": 7.499972770429382,
+            "min": 40,
+            "max": 71
+        }
+    },
+    "is_fitted": true,
+    "inscaler": "standardize",
+    "outscaler": "standardize",
+    "ptk_version": "1.1.2",
+    "covariates": [
+        "Age"
+    ],
+    "unique_batch_effects": {
+        "Sex": [
+            "0.0",
+            "1.0"
+        ],
+        "Site": [
+            "11025.0",
+            "11026.0",
+            "11027.0",
+            "11028.0"
+        ]
+    },
+    "inverse_batch_effect_counts": {
+        "Sex": {
+            "0_17801": "0.0",
+            "1_15751": "1.0"
+        },
+        "Site": {
+            "0_20731": "11025.0",
+            "1_4436": "11026.0",
+            "2_8370": "11027.0",
+            "3_15": "11028.0"
+        }
+    },
+    "batch_effects_maps": {
+        "Sex": {
+            "0_0": "0.0",
+            "1_1": "1.0"
+        },
+        "Site": {
+            "0_0": "11025.0",
+            "1_1": "11026.0",
+            "2_2": "11027.0",
+            "3_3": "11028.0"
+        }
+    },
+    "batch_effect_covariate_ranges": {
+        "Sex": {
+            "0.0": {
+                "Age": {
+                    "mean": 54.677546205269365,
+                    "min": 
